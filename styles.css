@@ -1,0 +1,358 @@
+body {
+    margin: 0;
+    padding: 0em;
+    font-family: "Roboto", sans-serif;
+}
+
+ol, 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+header {
+    background-color: palevioletred;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a i {
+    color: white ;
+    font-size: 1em;
+    padding: 0.8em;
+}
+header nav ul {
+    display: flex;
+    gap: 1.1em;
+}
+
+header nav ul li a {
+    color: white;
+
+}
+
+.seccion-1 {
+    background-color: rgb(238, 201, 201);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2em;
+}
+
+.seccion-2 {
+    width: 100%;
+    background-color: rgb(238, 201, 201);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2em;
+}
+.obra img {
+    margin-left: none;
+    margin-right: none;
+    width: 100%; /* Ancho deseado */
+    height: 3auto; /* Altura automática para mantener la proporción */
+    background-color: rgb(238, 201, 201);
+    }
+
+.acerca-imagen img {
+    margin-left: 100px;
+    width: 300px; /* Ancho deseado */
+    height: auto; /* Altura automática para mantener la proporción */
+    }     
+
+footer {
+    clear: both;
+    background-color: rgb(238, 201, 201);
+    text-align: center;
+    padding: 25px;
+}
+
+#footer {
+    padding: 1em;
+
+}
+
+div {
+    display: block;
+}
+
+#footer h3{
+    color: black;
+
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#footer nav ul li a {
+    color: black;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a i.fa-solid.fa-heart.fixed {
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+}
+
+/*MENU */
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+     /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    header  {
+        background-color: rgb(188, 34, 126);
+    }
+   
+    .acerca-de {
+        text-align: center;
+    }
+       
+    .acerca-imagen {
+     margin-bottom: 40px;
+    }
+   
+    h3.fuente-acento {
+        text-align: center;
+    }
+   
+    .checkbtn {
+        display: block;
+    }
+
+    #encabezado ul {
+        color: black;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: aquamarine;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }   
+
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+   
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #encabezado nav ul li{
+        display: block;
+        margin: 50 px 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn {
+        color: blue;
+    }
+
+
+}  
+
+
+/* Estilos para pantallas más grandes (a partir de 769px) */
+@media (min-width: 769px) {
+/* Aquí puedes escribir los estilos que se aplicarán en pantallas más
+grandes */
+body {
+font-size: 16px;
+}
+.container {
+width: 100%;
+margin: 0 auto;
+}
+}
+
+/* ------------- CSS General ------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #5d6063;
+    background-color: #eaedf0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+  }
+  
+  /* ------------- Encabezado Contacto ------------- */
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+  /* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+    .form-row input[type="email"] {
+        background-color:  #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+        width: 100px;
+        padding: 7px;
+        font-size: 14px;
+      }
+    .form-row textarea {
+        font-family: "Helvetica", "Arial", sans-serif;
+        font-size: 14px;
+      
+      
+        background-color: #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+      
+      
+        min-height: 200px;
+        margin-bottom: 10px;
+        padding: 7px;
+        resize: none;
+      
+      
+        width: 100%;
+      }
+      /* ------------- Para Pantallas de más de 700px ------------- */
+      
+      
+    .form-row textarea {
+        width: 250px;
+        }
+    .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #5995da;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 40px;
+        cursor: pointer;
+        }
+    .form-row button:hover {
+        background-color: #76aeed;
+        }
+    .form-row button:active {
+        background-color: #407fc7;
+        }
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+    .form-row button {
+        margin-left: 120px;
+        }
